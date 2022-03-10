@@ -5,7 +5,7 @@ services:
   #   build:
   #     context: .
   #     args:
-  #       PIP_EXTRA_URL: https://pypi-enforce:fcdm3uoigtwhdddrzsdtlm7yoacetujytozasfesat7pg6mkzwzq@pkgs.dev.azure.com/enforcegroup/_packaging/pypi-enforce/pypi/simple/
+  #       PIP_EXTRA_URL: 
   #   ports:
   #     - "8080:8080"
   #   container_name: enforce-localizacao-api
