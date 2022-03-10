@@ -1,0 +1,11 @@
+const repositorieController = require('../controllers/RepositoryController')
+const express = require('express');
+const router = express.Router();
+
+router.get('/searchGitRepository', repositorieController.fetchRepository)
+router.post('/postRepository', repositorieController.postRepository)
+router.get('/getAllRepository', repositorieController.getAllRepository)
+router.get('/getRepository/:id?', repositorieController.getRepositoryById)
+router.delete('/deteleRepository/:id?', repositorieController.deleteRepository)
+
+module.exports = router;

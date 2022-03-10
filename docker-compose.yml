@@ -1,0 +1,27 @@
+version: "3"
+
+services:
+  # web:
+  #   build:
+  #     context: .
+  #     args:
+  #       PIP_EXTRA_URL: https://pypi-enforce:fcdm3uoigtwhdddrzsdtlm7yoacetujytozasfesat7pg6mkzwzq@pkgs.dev.azure.com/enforcegroup/_packaging/pypi-enforce/pypi/simple/
+  #   ports:
+  #     - "8080:8080"
+  #   container_name: enforce-localizacao-api
+  #   environment:
+  #     - LOCALIZACAO_DBCONN=postgresql://postgres:postgres@enforce-localizacao-db:5432/db_localizacao
+  #   volumes:
+  #     - ./:/usr/src/app
+
+  db:
+    image: postgis/postgis
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=db_ronaldo
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres-data:/var/lib/postgres/data
+    container_name: ronaldo-db
