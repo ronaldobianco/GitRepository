@@ -1,7 +1,9 @@
+require('dotenv').config()
+
 const Sequelize = require('sequelize');
-const sequelize = new Sequelize('Ateliware' , 'postgres' , 'D@rthV@d3r' , {
+const sequelize = new Sequelize(process.env.BD_NAME , process.env.BD_USER , process.env.BD_PASSWORD , {
   dialect: 'postgres',
-  hots:'localhost'
+  hots:process.env.HOTS
 })
 sequelize.sync()
 module.exports = sequelize;
