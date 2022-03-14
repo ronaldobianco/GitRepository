@@ -1,6 +1,5 @@
 const Sequelize = require('sequelize');
 const database = require('../config/config')
-
 const Repository = database.define('Repository', {
     id: {
         type: Sequelize.INTEGER,
@@ -21,6 +20,14 @@ const Repository = database.define('Repository', {
         allowNull: false
     },
     language:{
+        type: Sequelize.STRING,
+        allowNull: true
+    },
+    ownerName:{
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    img_url:{
         type: Sequelize.STRING,
         allowNull: false
     },

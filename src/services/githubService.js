@@ -7,9 +7,14 @@ function searchRepository(queryParams){
         .then(response => response.data)
         .catch(error => error);
 }
+function searchRepositoryById(queryParams){
+    return axios.get(`${baseUrl}repos/${queryParams.path}`)
+        .then(response => response.data)
+        .catch(error => error);
+}
 function formatQueryToString(query){
     return Object.keys(query)
     .map(key => `${key}=${query[key]}`)
     .join('&');
 }
-module.exports = { searchRepository }
+module.exports = { searchRepository , searchRepositoryById }
