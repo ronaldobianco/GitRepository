@@ -33,13 +33,10 @@
 
 ## Ferramentas utilizadas
 <div style="display:flex;">
- <img style="margin-right:5px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png" alt="angular" width="40" height="40"/>
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png" alt="angular" width="40" height="40"/>
 </div>
 <div style="display:flex;">
-<img  style="margin-right:5px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png" alt="angular" width="40" height="40"/>
-  <img  style="margin-right:5px;" src="https://seeklogo.com/images/J/jest-logo-F9901EBBF7-seeklogo.com.png" alt="angular" width="40" height="40"/>
-  <img src="https://cdn.worldvectorlogo.com/logos/karma.svg" alt="angular" width="40" height="40"/>
+   <img src="https://seeklogo.com/images/S/sequelize-logo-9A5075DB9F-seeklogo.com.png" alt="angular" width="40" height="40"/>
    <img src="https://logospng.org/download/node-js/logo-node-js-1024.png" alt="angular" width="40" height="40"/>
 </div>
 
@@ -61,16 +58,16 @@ npm install
 ##### Development server
 
 ```bash
-ng serve
+npm dev
 ```
 ##### Build
 
 ```bash
-ng build (Use o sinalizador `--prod` para uma compilação de produção.)
+npm start
 ```
 ##### Testes unitários
 
 ```bash
-ng test
+npm test
 ```
 
