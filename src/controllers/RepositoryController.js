@@ -17,7 +17,7 @@ async function getRepositoryById(req, res){
     if (!repositories) {
         return res.status(404).json({'body': {message:'Repository not found'}})
     }
-    return res.status(302).json({'body': {message:'Successful retrieved github repository', data:repositories}})
+    return res.status(200).json({'body': {message:'Successful retrieved github repository', data:repositories}})
 }
 async function postRepository(req, res){
     const queryParams = req.body
